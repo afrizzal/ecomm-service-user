@@ -33,7 +33,7 @@ module.exports = {
     fields: ['user_id'],
     references: {
       table: 'users',
-      fields: 'id'
+      field: 'id'
     }
   });
 },

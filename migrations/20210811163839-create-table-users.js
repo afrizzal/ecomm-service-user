@@ -44,12 +44,12 @@ module.exports = {
         allowNull: false
       }
     });
+    
     await queryInterface.addConstraint('users', {
       type: 'unique',
       fields: ['email'],
       name: 'UNIQUE_USERS_EMAIL'
     })
-
   },
 
   down: async (queryInterface, Sequelize) => {
